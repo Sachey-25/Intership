@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML tables</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse; 
+            border-spacing: 5px;
+
+        }
+        th,td{
+            padding: 20px;
+        }
+        th{
+            text-align: right;
+        }
+        td{
+            color: rgb(242, 2, 2);
+        }
+        caption{
+            color: rgb(109, 110, 109);
+            font-size: 30px;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <!--HTML tables-->
+    <h1>HTML Tables</h1>
+    <p>HTML tables allows you to arrange data into rows and columns
+        making it easy to display the information. 
+        HTML table can be created using <table> tag
+    </p>
+    <h2>Table consist the list of Indian Cricketers</h2>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Profession</th>
+        </tr>
+        <tr>
+            <td>Sachin</td>
+            <td>Tendulkar</td>
+            <td>Cricket</td>
+        </tr>
+        <tr>
+            <td>Rohit</td>
+            <td>Sharma</td>
+            <td>Cricket</td>
+        </tr>
+        <tr>
+            <td>Virendra</td>
+            <td>Sehwag</td>
+            <td>Cricket</td>
+        </tr>
+        <tr>
+            <td>Yuvraj</td>
+            <td>Singh</td>
+            <td>Cricket</td>
+        </tr>
+        <table style="width: 100%;">
+            <caption>Employee table</caption>
+            <tr>
+                <th>empid</th>
+                <th colspan="2">empfullname</th>
+                <th>designation</th>
+                <th>city</th>
+                <th>state</th>
+                <th>pin </th>
+            </tr>
+            <tr>
+                <td>998456</td>
+                <td>Sachin</td>
+                <td>Anil</td>
+                <td>Techlead</td>
+                <td>Hyderabad</td>
+                <td>Telangana</td>
+                <td>585401</td>
+            </tr>
+            
+        </table>
+        <table>
+            <caption>Nested table</caption>
+            <tr>
+                <td>Outer table</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>InnerTable</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+    </table>
+    
+</body>
+</html>
