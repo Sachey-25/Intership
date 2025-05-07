@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techmasters</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Techmasters</h1>
+            <p>Your one-stop solution for all tech needs.
+            Explore our services and resources to enhance your tech journey.  
+            Join our community and stay updated with the latest trends.  
+            Contact us for any inquiries or support.  
+            Follow us on social media for more updates.  
+            Subscribe to our newsletter for exclusive content.  
+            Check out our blog for insightful articles and tips.  
+            Join our forums to connect with like-minded individuals.  
+            Participate in our events and webinars to learn from experts.  
+            Explore our resources section for guides and tutorials.  
+            Read our terms and conditions for using our services.  
+            View our sitemap for easy navigation.  </p>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+                <a href="#blog">Blog</a>  
+                <a href="#careers">Careers</a>
+                <a href="#events">Events</a>
+                <a href="#sitemap">Sitemap</a>
+                <a href="#feedback">Feedback</a>
+                <a href="#login">Login</a>
+                <a href="#register">Register</a>
+            </nav>        
+        </header>
+        <div class="content">
+            <section id="home">
+                <h2>Home</h2>
+                <p>Welcome to Techmasters, your go-to platform for all things tech.</p>
+            </section>
+            <section id="about">
+                <h2>About Us</h2>
+                <p>Learn more about our mission and vision.</p>
+            </section>
+            <section id="services">
+                <h2>Our Services</h2>
+                <p>Discover the range of services we offer.</p>
+            </section>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us for any inquiries.</p>
+            </section>
+        </div>
+    </div>
+    <div id="contact" class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="/submit" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <footer>
+            <p>&copy; 2023 Techmasters. All rights reserved.</p>
+            <p>Follow us on social media: 
+                <a href="https://twitter.com/techmasters">Twitter</a>, 
+                <a href="https://facebook.com/techmasters">Facebook</a>, 
+                <a href="https://instagram.com/techmasters">Instagram</a>
+            </p>
+            <p>Subscribe to our newsletter for the latest updates.</p>
+            <form action="/subscribe" method="POST">
+                <label for="newsletter-email">Email:</label>
+                <input type="email" id="newsletter-email" name="newsletter-email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </footer>
+    </div>
+</body>
+</html>
